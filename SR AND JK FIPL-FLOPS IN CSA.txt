@@ -12,14 +12,14 @@ def sr_flip_flop(s, r):
     if s == 1 and r == 0:
         q = 1
         q_bar = 0
-        print("Q is Set to 1 and Q_bar is reset to 0")
+        print("State = SET")
     elif s == 0 and r == 1:
         q = 0
         q_bar = 1
-        print("Q_bar is Set to 1 and Q is reset to 0")
+        print("State = RESET")
     elif s == 0 and r == 0:
         pass # no change
-        print("No change hold condition")
+        print("No change =  HOLD CONDITION")
     else: # s == 1 and r == 1
         print("Invalid input: s and r cannot be both 1")
 
